@@ -1,0 +1,283 @@
+body.default {
+  --font-family: 'Helvetica', Arial, sans-serif;
+  --accent-color: coral;
+  --accent-color1: rgba(255, 127, 80, 0.7);
+  --border-radius: 2rem;
+}
+
+body.default input,
+body.default button,
+body.default select {
+  font-size: inherit;
+  color: inherit;
+}
+
+body.default table {
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+}
+
+body.default table thead th {
+  text-align: left;
+}
+
+body.default thead tr th:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+body.default thead tr th:last-child {
+  border-top-right-radius: var(--border-radius);
+}
+
+body.default tfoot tr td:first-child {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+body.default table thead tr th button {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+body.default tfoot tr td:last-child {
+  border-bottom-right-radius: var(--border-radius);
+}
+
+body.default tfoot tr td {
+  border-top: 1px solid var(--gray-color);
+}
+
+body.default table th,
+body.default table tr:not(:last-child) td {
+  border-bottom: 0;
+}
+
+body.default table thead tr th {
+  border-bottom: 1px solid var(--gray-color);
+}
+
+body.default table thead tr th button {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+body.default table th,
+body.default table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--gray-color-dark);
+}
+
+body.default table tr:hover {
+  background-color: var(--gray-color-darker);
+}
+
+body.default hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    transparent
+  );
+}
+
+body.raw .modal-box {
+  border: 1px solid var(--gray-color);
+}
+
+body.default .modal-box {
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10rem 2rem var(--backdrop-color1);
+  border: 1px solid var(--gray-color-dark);
+}
+
+body.default .backdrop-bg {
+  background-color: var(--backdrop-color);
+}
+
+body.default .td-text {
+  border: 1px solid transparent;
+  padding: var(--padding);
+  opacity: 0.5;
+}
+
+body.default .switch-c.on .switch-i {
+  box-shadow: 0 0 1.5rem var(--accent-color1);
+}
+
+body.default::-webkit-scrollbar,
+body.default .scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+body.default::-webkit-scrollbar-track,
+body.default .scroll::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+body.default::-webkit-scrollbar-thumb,
+body.default .scroll::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5rem;
+}
+
+body.default table th,
+body.default table tr td {
+  padding: 1rem;
+}
+
+body.default table tr td {
+  height: 10rem;
+}
+
+body.default button,
+body.default input,
+body.default select,
+body.default fieldset {
+  font-family: inherit;
+}
+
+body.default button,
+body.default input,
+body.default select {
+  padding: var(--padding);
+}
+
+body.default button:focus,
+body.default input:focus,
+body.default select:focus {
+  outline: 0;
+  border: 1px solid var(--accent-color);
+}
+
+body.default button,
+body.default input,
+body.default select,
+body.default fieldset {
+  transition:
+    background-color var(--transition),
+    border var(--transition);
+  border: 1px solid var(--gray-color);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  border-radius: var(--border-radius);
+}
+
+body.default .flash {
+  position: absolute;
+  inset: -1px;
+  animation: Flash 1s forwards;
+  z-index: 2;
+  display: block;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
+}
+
+body.default button:hover:not(:disabled) {
+  background-color: var(--gray-color1);
+  border-color: var(--gray-color2);
+}
+
+body.default button:disabled {
+  color: var(--gray-color);
+}
+
+body.default button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+body.default .expand-btn:active:not(:disabled) {
+  transform: translateX(-3.5rem) translateY(1px);
+}
+
+body.default .expand-btn {
+  transform: translateX(-3.5rem);
+}
+
+body.default .select-item:hover {
+  border-color: var(--gray-color2);
+}
+
+body.default .switch-c > div {
+  transition: border-color var(--transition);
+}
+
+body.default .switch-c > div {
+  border: 1px solid var(--gray-color);
+  border-radius: var(--border-radius);
+  width: 9rem;
+}
+
+body.default .switch-i {
+  background-color: var(--gray-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--border-radius);
+  transition:
+    transform var(--transition),
+    background-color var(--transition);
+  transform: scale(0.8);
+}
+
+body.default .switch-c .switch-i {
+  display: block;
+}
+
+body.default .switch-c input {
+  display: none;
+}
+
+body.default .switch-c:hover .switch-i {
+  transform: translateX(0.2rem) scale(0.8);
+}
+
+body.default .switch-c:hover > div {
+  border-color: var(--gray-color2);
+}
+
+body.default .switch-c:hover .switch-i {
+  transform: translateX(0.2rem) scale(0.8);
+}
+
+body.default .switch-c.on:hover > div {
+  border-color: var(--accent-color);
+}
+
+body.default .switch-c.on .switch-i {
+  transform: translateX(4.5rem) scale(0.8);
+  background-color: var(--accent-color);
+}
+
+body.default .switch-c.on .switch-i {
+  box-shadow: 0 0 1.5rem var(--accent-color1);
+}
+
+body.default .spinner {
+  overflow: hidden;
+}
+
+body.default .spinner > span {
+  display: none;
+}
+
+body.default .spinner > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+
+body.default .spinner > div:after {
+  content: ' ';
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--accent-color);
+  border-color: var(--accent-color) transparent var(--accent-color)
+    transparent;
+  animation: Spin 1s linear infinite;
+}

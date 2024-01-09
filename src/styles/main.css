@@ -1,0 +1,119 @@
+body {
+  --accent-color: coral;
+  --gray-color-dark: #eee;
+  --gray-color-darker: #f6f6f6;
+  --gray-color: #aaa;
+  --gray-color1: #bbb;
+  --gray-color2: #eee;
+  --bg-color: white;
+  --fg-color: black;
+  --backdrop-color: rgba(255, 255, 255, 0.6);
+  --backdrop-color1: rgba(0, 0, 0, 0.1);
+  --border-radius: 0;
+  --padding: 1rem;
+  --transition: 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  accent-color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+body.dark-mode {
+  --bg-color: black;
+  --fg-color: white;
+  --backdrop-color: rgba(0, 0, 0, 0.6);
+  --backdrop-color1: rgba(255, 255, 255, 0.05);
+  --gray-color-dark: #171717;
+  --gray-color-darker: #070707;
+  --gray-color: #444;
+  --gray-color1: #555;
+  --gray-color2: #777;
+}
+
+#root {
+  min-width: 960px;
+}
+
+label {
+  user-select: none;
+}
+
+table thead,
+table tfoot {
+  position: sticky;
+  background-color: var(--bg-color);
+  z-index: 1;
+}
+
+table thead {
+  inset-block-start: 0;
+}
+
+table tfoot {
+  inset-block-end: 0;
+}
+
+table tr td.active,
+table tr th.active {
+  background-color: var(--gray-color-darker);
+}
+
+.bg {
+  background-color: var(--bg-color);
+}
+
+.h {
+  background-color: rgba(255, 127, 80, 0.7);
+}
+
+.sec-text {
+  opacity: 0.5;
+}
+
+.modal-backdrop {
+  animation: FadeIn 0.5s ease forwards;
+}
+
+.modal-box {
+  animation: SlideIn 0.5s ease forwards;
+}
+
+.modal-c.closing .modal-backdrop {
+  animation: FadeOut 0.5s ease forwards;
+}
+
+.modal-c.closing .modal-box {
+  animation: SlideOut 0.5s ease forwards;
+}
+
+.translate-x-y-50 .modal-box {
+  animation: SlideInTop 0.5s ease forwards;
+}
+
+.modal-c.closing .translate-x-y-50 .modal-box {
+  animation: SlideOutTop 0.5s ease forwards;
+}
+
+div:not(.translate-x-y-50) > .modal-box {
+  height: calc(100vh - 10rem);
+  margin-left: -2rem;
+  margin-top: 4rem;
+}
+
+.td-text {
+  border: 2px solid transparent;
+}
+
+button,
+input,
+select,
+fieldset {
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: var(--bg-color);
+  color: inherit;
+}

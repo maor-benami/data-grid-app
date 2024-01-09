@@ -1,0 +1,171 @@
+.inset-0 {
+  inset: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
+.padding-i-1 {
+  padding-inline: 1rem;
+}
+
+.padding-3 {
+  padding: 3rem;
+}
+
+.padding-5 {
+  padding: 5rem;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.inline {
+  display: inline-flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.flex.align-center {
+  align-items: center;
+}
+
+.flex.separator {
+  gap: 0;
+}
+
+.flex.separator:not(.column) > *:not(:last-child) {
+  border-inline-end: 1px solid var(--gray-color);
+}
+
+.flex.separator.column > *:not(:last-child) {
+  border-block-end: 1px solid var(--gray-color);
+}
+
+.flex.separator-1:not(.column) > *:not(:last-child) {
+  padding-inline-end: 2rem;
+  margin-inline-end: 2rem;
+}
+
+.flex.column.separator-1 > *:not(:last-child) {
+  padding-block-end: 2rem;
+  margin-block-end: 2rem;
+}
+
+.flex.separator-2:not(.column) > *:not(:last-child) {
+  padding-inline-end: 3rem;
+  margin-inline-end: 3rem;
+}
+
+.flex.column.separator-2 > *:not(:last-child) {
+  padding-block-end: 3rem;
+  margin-block-end: 3rem;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.frame {
+  max-width: 960px;
+}
+
+.bottom-50 {
+  bottom: 50%;
+}
+
+.right-50 {
+  right: 50%;
+}
+
+.translate-x-y-50 {
+  transform: translateY(50%) translateX(50%);
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.border-transparent {
+  border-color: transparent;
+}
+
+.ellipsis {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fb-40 {
+  flex-basis: 40%;
+}
+
+.fb-60 {
+  flex-basis: 60%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.s-1 {
+  height: 1rem;
+}
+
+.s-2 {
+  height: 2rem;
+}

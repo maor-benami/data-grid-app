@@ -1,0 +1,26 @@
+html {
+  font-size: 4px;
+}
+
+body {
+  margin: 0;
+  font-size: 4rem;
+  overflow-y: scroll;
+}
+
+body * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+table {
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table thead th {
+  text-align: left;
+}
